@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Navigation } from '@/components/navigation'
 import { FloatingPhotos } from '@/components/floating-photos'
+import { BirthdayMusic } from '@/components/birthday-music'
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body className={`${inter.className} font-sans antialiased`} suppressHydrationWarning>
         <Navigation />
         <FloatingPhotos />
+        <BirthdayMusic />
         {children}
         <Analytics />
       </body>
