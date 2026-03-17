@@ -10,6 +10,7 @@ import { FunFacts } from '@/components/fun-facts'
 import { ClosingSection } from '@/components/closing-section'
 import { PageTransition } from '@/components/page-transition'
 import { Confetti } from '@/components/confetti'
+import { BirthdaySound } from '@/components/birthday-sound'
 import { SectionDivider } from '@/components/section-divider'
 import { BackToTop } from '@/components/back-to-top'
 
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <PageTransition>
       <Confetti />
+      <BirthdaySound />
       <main className="bg-background text-foreground pt-20">
         <HeroSection />
         <SectionDivider emoji="🎂" />
