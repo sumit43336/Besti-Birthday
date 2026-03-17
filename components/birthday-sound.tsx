@@ -45,7 +45,7 @@ export function BirthdaySound() {
     }
   }
 
-  if (!mounted || !isBirthdayToday) {
+  if (!mounted) {
     return null
   }
 
